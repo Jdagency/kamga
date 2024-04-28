@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary : white;
+    --bg : rgb(0, 66, 128);
+    --second: rgb(218, 76, 76);
+}
+
+
+header {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 30px;
+    margin: 0px;
+    background: var(--bg);
+}
+
+header .logo {
+    font-size: ;
+    margin-left: 20px;
+}
+
+header .nav {
+    right: 20%;
+}
+
+
+header a{
+    color: var(--primary);
+    text-decoration: none;
+    padding: 4px 25px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.cont {
+    background: var(--second);
+    border: 1px solid #fff5ff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transform: translate(-10px);
+}
+
+.cont:hover {
+    font-weight: bold;
+    color: black;
+    background: var(--primary);
+    border: 2px solid var(--second);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+.content {
+    padding: 55px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.sectionproduits{
+	padding: 80px 5%;
+	margin-left: 100px;
+}
+.produits{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+	
+
+}
+ .produits .carte:hover{
+       transform: translate(-10px);
+ }
+.produits .carte{
+	width: 0px;
+	background: #f5f5f5;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	transition: transform 0.2s;
+
+}
+img{
+	/* border-radius: 10px; */
+	width: 250px;
+    border-radius: 25px;
+}
+.produits .carte .titre{
+	font-weight: 900;
+	font-size: 20px;
+	color: black;
+	padding: 0 20px;
+}
+.produits .carte .box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+
+}
+.produits .carte .prix{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+.produits .carte .achat{
+	font-size: 13px;
+	font-weight: 900;
+	color: #f63e4e;
+	padding: 10px 10px;
+	border-radius: 1px solid #f63e4e;
+	border-radius: 5px;
+}
+.produits .carte .box .achat:hover{
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+
+
+
+.footer {
+    background: var(--bg);
+    height: 85px;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.foot {
+    padding: 25px;
+     display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.foot .p1 {
+    margin-left: 25px;
+}
+
+
+.foot a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.foot .p {
+    font-weight: bold;
+    margin-left: 7px;
+    transform: translate(-10px);
+}
+
+.foot .p:hover {
+    transition: 0.5s;
+    color: #f63e4e;
+}
+
+.foot b:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        height: 120px;
+    }
+
+    .produits .carte {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot {
+        text-align: center;
+        font-size: 25px;
+        display: block;
+        
+    }
+
+    .foot p{
+        font-size: 20px;
+        
+    }
+
+}
+
+@media (max-width: 550px) {
+    .footer {
+        height: 11vh;
+        margin: 0;
+        top: 0;
+	left: 0;
+	width: 100%;
+    }
+
+    header .logo {
+        color: #f63e4e;
+    }
+
+    .produits .carte {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-right: 55px;
+    }
+
+    .footer {
+        height: 105px;
+    }
+
+    .foot {
+        text-align: center;
+        display: block;
+        
+    }
+
+    .foot p{
+        font-size: 18px;
+        
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    header .logo {
+        color: #f63e4e;
+    }
+
+    .footer {
+        height: 10vh;
+        margin: 0;
+        top: 0;
+	left: 0;
+	width: 100%;
+    }
+
+    .produits .carte {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-right: 70px;
+    }
+   
+
+    .foot {
+        text-align: center;
+        display: block;
+        
+    }
+
+    .foot p{
+        font-size: 15px;
+        
+    }
+
+}
