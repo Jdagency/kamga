@@ -82,7 +82,7 @@ header a{
 
 .sectionproduits{
 	padding: 80px 5%;
-	margin-left: 100px;
+	margin-left: 0px;
 }
 .produits{
 	display: grid;
@@ -183,7 +183,7 @@ img{
 
 @media (max-width: 700px) {
     .footer {
-        height: 120px;
+        height: auto;
     }
 
     .produits .carte {
@@ -208,7 +208,7 @@ img{
 
 @media (max-width: 550px) {
     .footer {
-        height: 11vh;
+        height: auto;
         margin: 0;
         top: 0;
 	left: 0;
@@ -227,7 +227,7 @@ img{
     }
 
     .footer {
-        height: 105px;
+        height: auto;
     }
 
     .foot {
@@ -261,7 +261,7 @@ img{
         display: block;
         align-items: center;
         justify-content: center;
-        margin-right: 70px;
+        margin-right: 0px;
     }
    
 
